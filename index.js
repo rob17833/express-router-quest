@@ -1,4 +1,6 @@
 const express = require('express');
+// this app does't use a db
+// so we use two files to simulate it
 const fakePosts = require('./data/posts');
 const fakeComments = require('./data/comments');
 
