@@ -17,4 +17,9 @@ router.get('/:tagId/posts', (req, res)=>{
 	res.json(posts.filter(item=>item.tag_ids.toLowerCase().includes(tagId.toLowerCase().toString())));
 })
 
+// ***BONUS***
+// note that you can use both upperCase or lowerCase params for the tag, the route 
+// will works... but the hyphen is required
+// I let you fix that ;)
+
 module.exports = router;
